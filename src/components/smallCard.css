@@ -1,0 +1,25 @@
+.smallCard{
+    background-color: white;
+    border-radius:8px;
+    margin: 12px;
+    min-width: 40vh;
+    display: flex;
+    align-items: center;
+    padding: 16px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.link{
+    text-decoration: none;
+    color:black;
+}
+
+.smallCard p{
+    margin-left: 8px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.ml-2{
+    border-radius: 50%;
+}

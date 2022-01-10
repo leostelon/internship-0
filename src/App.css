@@ -1,0 +1,15 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  text-align: center;
+}
+
+h3{
+  padding: 8px;
+  color:rgb(26, 43, 61);
+}
+
