@@ -15,13 +15,14 @@
     border-radius:16px;
     display:flex;
     flex-direction: column;
-    padding:20px;
+    padding:32px;
     justify-content: space-between;
 }
 
 .product-header{
     display:flex;
     justify-content:space-between;
+    align-items: center;
 }
 
 .product-body-image .ml-2{

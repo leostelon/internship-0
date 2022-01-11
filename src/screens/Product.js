@@ -38,7 +38,9 @@ const ProductScreen = function () {
 	};
 
 	return loading ? (
-		<center>Loading...</center>
+		<div style={{height: "100vh", display: "flex", alignItems:"center", justifyContent: "center", background: "linear-gradient(to bottom, #ffcc99 0%, #ff99cc 100%)"}}>
+			<h3 style={{color: "white"}}>loading⏰</h3>
+		</div>
 	) : (
 		<div className="product-screen">
 			<div className="product">

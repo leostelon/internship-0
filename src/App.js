@@ -40,7 +40,9 @@ const Home = function () {
 	}
 
 	return loading ? 
-		<h3>loading</h3>:(
+		<div style={{height: "100vh", display: "flex", alignItems:"center", justifyContent: "center", background: "linear-gradient(to bottom, #ffcc99 0%, #ff99cc 100%)"}}>
+			<h3 style={{color: "white"}}>loading, booting the server⚡</h3>
+		</div>:(
 		<div style={homeStyle}>
 			<h3>
 				Upcoming Birthday's🥳

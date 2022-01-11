@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 export const Create = () => {
 	const navigate = useNavigate();
     const [name, setName] = useState("");
-    const [date, setDate] = useState(Date.now());
+    const [date, setDate] = useState(undefined);
 
     const handleSubmit =async (event) => {
         event.preventDefault();
@@ -24,24 +24,29 @@ export const Create = () => {
      }
 
 	return (
-		<form onSubmit={handleSubmit} style={{display: 'flex', flexDirection:"column"}}>
-			<label>
-				Enter your name:
-				<input
-					type="text"
-					value={name}
-					onChange={(e) => setName(e.target.value)}
-				/>
-			</label>
-            <label>
-				Enter your birthdate:
-				<input
-					type="date"
-					value={date}
-					onChange={(e) => setDate(e.target.value)}
-				/>
-			</label>
-			<input type="submit" />
-		</form>
+		<div style={{padding:"16px",display: "flex",alignItems: "center", justifyContent: "center"}}>
+			<form onSubmit={handleSubmit} style={{display: 'flex', flexDirection:"column"}}>
+				<div style={{padding:"16px",display: "flex",alignItems: "flex-start", flexDirection:"column",justifyContent: "center"}}>
+					<label>
+						Enter your name:
+						<input
+							type="text"
+							value={name}
+							onChange={(e) => setName(e.target.value)}
+						/>
+					</label>
+					<br/>
+					<label>
+						Enter your birthdate:
+						<input
+							type="date"
+							value={date}
+							onChange={(e) => setDate(e.target.value)}
+						/>
+					</label>
+				</div>
+				<input style={{margin:"16px", padding:"8px"}} type="submit" />
+			</form>
+		</div>
 	);
 };
